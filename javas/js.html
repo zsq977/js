@@ -7,7 +7,9 @@
   <title>Document</title>
 </head>
 <body>
+    <p id='amao'>我是一段文字</p>
     <script>
+      console.log('hello world')
         document.write("<h1>hello world!</h1>")
     
         var a = 10
@@ -16,11 +18,51 @@
         document.write('<br>')
     
         var i = 0
-        while ( i <= 100000) {
+        while ( i < 5) {
           document.write( i + '<br>')
           i++
         }
-      </script>
+
+        document.write('<br>')
+
+        var x = 20;
+        if ( x > 20) {    // if   x>20  then
+            document.write('x是一个大于20的数')
+        } else {               // else
+            document.write('x是一个小于等于20的数')
+        }
+        document.getElementById('amao'),innerHTML = '我才是被显示的文字'
+
+        function whoisbigger(x,y){
+          if( x > y ) {
+            return x
+          } else {
+             return y
+          }
+        }
         
+        document.write(whoisbigger(1, 2))
+        document.write('<br>')
+        document.write(whoisbigger(12, 2))
+        document.write('<br>')
+        document.write(whoisbigger(156, 25))
+        document.write('<br>')
+        document.write(whoisbigger(1, 286))
+        document.write('<br>')
+        document.write(whoisbigger(157, 27))
+        document.write('<br>')
+        document.write(whoisbigger(175, 287))
+        document.write('<br>')
+        document.write(whoisbigger(81, 882))
+
+        document.write('<br>' + Math.random())
+        document.write('<br>' + Math.random())
+        document.write('<br>' + Math.random())
+        document.write('<br>' + Math.random())
+        document.write('<br>' + Math.random())
+        document.write('<br>' + Math.random())
+        document.write('<br>' + Math.random())
+        document.write('<br>' + Math.random())
+      </script>        
     </body>
     </html>
