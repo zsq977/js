@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  document.write("jojdo!")
+    var  a = 10
+    var  b = 30
+  document.write ( a + b )  
+  document.write ('<br>')
+
+var i= 0
+while (i<=10){
+  document.write(i + '<br>')
+  i++
+}
+
+
+document.write('<br>')
+
+var x = 20;
+if(x > 20 ) {      //if    x>20   then
+  document.write('x是一个大于20的数')
+}else{           //else 
+   document.write('x是一个小于等于20的数')
+}
+
+function whoisbigger(x,y){
+  if (x > y)  {
+    return x
+  }else {
+    return y
+  }
+}
+
+document.write(whoisbigger(1,2))
+document.write('br>')
+document.write(whoisbigger(156,2))
+document.write('br>')
+document.write(whoisbigger(1453,2))
+document.write('br>')
+document.write(whoisbigger(1577,782))
+document.write('br>')
+document.write(whoisbigger(1543,552))
+document.write('br>')
+document.write(whoisbigger(15875,5752))
+document.write('br>')
+
+document.write('<br>' + Math.random())
+document.write('<br>' + Math.random())
+document.write('<br>' + Math.random())
+document.write('<br>' + Math.random())
+document.write('<br>' + Math.random())
+document.write('<br>' + Math.random())
+document.write('<br>' + Math.random())
+document.write('<br>' + Math.floor (Math.random() * 10  ))
+
+function bark(weight){
+  if (weight >=15){
+    return '汪汪'
+    }else {
+      return '呜呜'
+    }
+  
+}
+document.write('<br>'+'来福'+ bark (48))
+document.write('<br>'+'旺财'+ bark (20))
+
+document.write('<br>')
+var arr =[5,6,'x','y']
+for (var i=0;i<4;i++){
+  document.write(arr[i])
+}
+
+  </script>
+</body>
+</html>
