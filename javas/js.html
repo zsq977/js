@@ -63,6 +63,37 @@
         document.write('<br>' + Math.random())
         document.write('<br>' + Math.random())
         document.write('<br>' + Math.random())
+
+        function bark(weight) {
+          if ( weight >= 15) {
+            return 'enenaa!'
+            } else {
+              return 'wuwuwu'
+            }
+          }
+
+        document.write('<br>' + '丹妮' + bark(45))
+        document.write('<br>' + '来福' + bark(10))
+
+        var arr = [10,1,'x','y']
+        for (var i=0; i<4;i++){
+          document.write(arr[i])
+        }
+
+        var person =['小郑','小思','小晴']
+        var groud=['教室','校门','教务处']
+        var thing=['看门','学习','批试卷']
+        function foo(arr){
+        console.log(arr)
+          // p=Math.floor(Math.random()*person.length)
+        }
+
+        foo(person)
+        var p,g,t
+
+        // g=Math.floor(Math.random()*ground.length)
+        // t=Math.floor(Math.random()*thing.length)
+        document.write(person[p]+'在'+groud[g]+thing[t])
       </script>        
     </body>
     </html>
